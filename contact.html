@@ -11,12 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    <header class="en-tete">
+  <header class="en-tete">
     <div class="conteneur en-tete-contenu">
-      <a href="#accueil" class="logo">Élan Fitness</a>
+      <a href="index.html" class="logo">Élan Fitness</a>
 
       <nav aria-label="Navigation principale">
         <ul class="menu">
@@ -30,43 +31,48 @@
   </header>
 
   <main>
-            <section id="a-propos" class="section">
-      <div class="conteneur apropos-contenu">
-
-        <div class="apropos-texte">
-          <p class="sur-titre">Notre histoire et notre mission</p>
-          <h2>Une communauté passionnée au cœur de Casablanca</h2>
-          <p>
-            Fondé avec la conviction que le sport doit être accessible, motivant et bienveillant,
-            Élan Fitness a été pensé comme un lieu d'énergie positive où chacun progresse à son rythme.
-          </p>
-          <p>
-            Que vous franchissiez pour la première fois la porte d'une salle ou que vous prépariez des
-            objectifs avancés, notre équipe de coachs certifiés vous accompagne au quotidien, sans
-            jugement et avec passion.
-          </p>
-
-          <ul class="valeurs">
-            <li class="valeur">
-              <div class="icone icone-petite"><img src="img/icone-check.svg" alt=""></div>
-              <span>Esprit bienveillant</span>
-            </li>
-            <li class="valeur">
-              <div class="icone icone-petite"><img src="img/icone-check.svg" alt=""></div>
-              <span>Suivi personnalisé</span>
-            </li>
-            <li class="valeur">
-              <div class="icone icone-petite"><img src="img/icone-check.svg" alt=""></div>
-              <span>Ambiance conviviale</span>
-            </li>
-          </ul>
+    <section class="section">
+        <h2 class="contact">Contact us</h2>
+        <div class="section-contact">
+        <div>
+          <h3 class="social">Social media sites</h3>
+            <ul class="contact-list">
+               <li><a href="#"><i class="fa-solid">&#xf095;</i> +212 708545578</a></li>
+               <li><a href="#"><i class="fa-solid">&#xf0e0;</i> Exmple@gmail.com</a></li>
+               <li><a href="#"><i class="fa-brands">&#xf16d;</i> Instgram</a></li>
+               <li><a href="#"><i class="fa-brands">&#xf39e;</i> Facebook</a></li>
+            </ul>
         </div>
 
-        <img class="apropos-image" src="img/equipe.jpg" alt="L'équipe de coachs d'Élan Fitness réunie dans la salle">
+        <div>
+          <form class="form" action="#">
+              <div class="column">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required />
+              </div>
 
-      </div>
+              <div class="column">
+                <label for="prenom">Prenom:</label>
+                <input type="text" name="prenom" id="prenom" required />
+              </div>
+
+              <div class="column">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+
+              <div class="column">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+
+              <button type="submit">Send</button>
+          </form>
+        </div>
+        </div>
     </section>
   </main>
+
   <footer class="pied-de-page">
     <div class="conteneur">
 
@@ -81,7 +87,6 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="propos.html">À propos</a></li>
             <li><a href="programmes.html">Programmes</a></li>
-            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
